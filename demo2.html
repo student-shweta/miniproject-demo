@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1 id="tab">Tabs</h1>
+    <section id="tab_one">
+    <div class="tab_headline">
+    <div class="tab-container">
+        <button class="tab-button" onclick="openTab('tab1')">HTML</button>
+        <button class="tab-button" onclick="openTab('tab2')">CSS</button>
+        <button class="tab-button" onclick="openTab('tab3')">JAVASCRIPT</button>
+        </div>
+        <div id="tab1" class="tab-content">
+            <h1>Learn HTML</h1>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero quam iusto doloribus asperiores, facilis aut culpa, suscipit sapiente sequi ut quidem accusamus molestias, doloremque blanditiis voluptate labore laboriosam? Quas, maxime!
+            Aliquid, quibusdam commodi at fugiat nulla error suscipit, nesciunt, autem ratione ducimus nobis voluptate rem officia optio porro quos? Et at voluptates, dolor illo repellat ipsum deleniti voluptas! Voluptates, et!
+            Vitae numquam consequuntur, beatae eligendi sed temporibus dolor eos veritatis corrupti voluptatum repellendus illo suscipit laborum hic officia facere fugit nesciunt fugiat ducimus modi doloremque aliquam sequi. Enim, consequuntur voluptas.
+        </div>
+      
+        <div id="tab2" class="tab-content" style="display:none;">
+            <h1>Learn CSS</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio modi optio non, quos consectetur maxime ratione corrupti harum. Necessitatibus placeat perferendis quam neque eum accusamus a eaque ex error odit.
+            Deleniti veniam, architecto tempora, sint dolores blanditiis voluptas velit eveniet ipsam sunt amet perferendis eaque nisi dicta illo officiis eum perspiciatis ex. Expedita labore magni, maiores tempora quidem dicta facere?
+            In nam, vero necessitatibus beatae quae aliquid, ab nesciunt exercitationem quod atque animi eos ipsa porro a dolor illum doloremque. Aliquid inventore architecto assumenda dicta placeat nulla exercitationem nobis corrupti.
+        </div>
+      
+        <div id="tab3" class="tab-content" style="display:none;">
+            <h1>Learn JAVASCRIPT</h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur iure, sed cum culpa quibusdam accusantium quaerat error, ratione explicabo nam numquam, pariatur natus labore. Quo officia alias error cum asperiores.
+            Accusamus nam tempore consequatur illum consectetur dignissimos dicta architecto at vitae sint ut, eius officiis, aspernatur consequuntur mollitia fugit quibusdam repellendus. Corporis qui officia impedit iste deserunt? Corrupti, veritatis laboriosam?
+            Distinctio fugit quis itaque! Ex nostrum voluptatem debitis distinctio provident, quibusdam voluptates illo vitae ipsam illum quidem laboriosam, aut dolores culpa dolor, voluptas consectetur delectus ea soluta veniam. Animi, iure?
+        </div>
+    </div>    
+</section>
+
+   <section>
+    <h2 class="title">FAQs</h2>
+    <div class="faq">
+        <div class="question">
+            <h1>What is JavaScript?</h1>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        </div>
+        <div class="answer">
+            <p>JavaScript is a scripting language that enables you to create dynamically updating content,
+                 control multimedia, animate images, and pretty much everything else.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h1>Is it easy to learn Html and Css?</h1>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        </div>
+        <div class="answer">
+            <p>Fortunately, the fundamentals of HTML and CSS are simple. You can become acquainted with HTML in a matter of hours.
+                 Basic CSS is also not difficult; however, CSS can become complicated when attempting to create advanced layouts.</p>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="question">
+            <h1>What is Web Development?</h1>
+            <svg width="15" height="10" viewBox="0 0 42 25">
+            <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round"/>
+        </svg>
+        </div>
+        <div class="answer">
+            <p>Web development, also known as website development, refers to the tasks associated with creating, building, and maintaining websites and
+                 web applications that run online on a browser. It may, however, also include web design, web programming, and database management.</p>
+        </div>
+    </div>
+</section>
+<h1 id="slider">SLIDERs</h1>
+
+<section id="section_one">
+<div class="content">
+    <div class="images">
+        <img src="html.jpg" alt="html">
+        <img src="javascript.jpg" alt="css">
+        <img src="css.jpg" alt="javascript">
+    </div>
+    <div onclick="side_slide(-1)" class="slide left">
+        <span class="fas fa-angle-left"></span>
+    </div>
+    <div onclick="side_slide(1)" class="slide right">
+        <span class="fas fa-angle-right"></span>
+    </div>
+    <div class="btm_sliders">
+        <span onclick="btm_slide(1)"></span>
+        <span onclick="btm_slide(2)"></span>
+        <span onclick="btm_slide(3)"></span>
+    </div>
+</div>
+</section>
+
+<script src="script1.js"></script>    
+</body>
+</html>

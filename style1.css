@@ -1,0 +1,169 @@
+#tab{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#tab_one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin-top: 0;
+
+}
+
+.tab_headline{
+    height: 300px;
+    width: 700px;
+    
+}
+
+
+.tab-container {
+    border-bottom: 1px solid black;
+    padding: 10px;
+    margin-top: 0px;
+    padding-bottom: 40px;
+}
+
+.tab-button {
+    background-color: #f2f2f2;
+    border: none;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-right: 70px;
+}
+
+.tab-button.active,
+.tab-button:hover {
+    background-color:orange;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+}
+
+.faq{
+    max-width: 600px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.question h3{
+    font-size: 30px;
+
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer p{
+    line-height: 1.2;
+    font-size: 20px;
+    margin-top: 0px;
+
+}
+
+.faq.active .answer{
+    max-height: 100px;
+} 
+
+.faq.active svg{
+    transform: rotate(180deg);
+}
+
+#slider{
+    text-align: center;
+    margin-top: 40px;
+}
+
+#section_one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+    text-align: center;
+}
+
+.content{
+    height: 400px;
+    width: 750px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content .images{
+    height: 100%;
+    width: 100%;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+
+}
+
+.btm_sliders{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+}
+
+.btm_sliders span{
+    height: 5px;
+    width: 50px;
+    border: 1px solid black;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.btm_sliders span:hover{
+    background-color: black;
+}
+
+.content .slide{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    border: 1px solid black;
+}
+
+
+.slide span{
+    font-size: 35px;
+    color: black;
+    line-height: 41px;
+}
+.right{
+    right: 0;
+}
+
+
+
+
